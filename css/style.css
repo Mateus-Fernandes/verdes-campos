@@ -149,7 +149,349 @@ a.navbar-brand {
   top: 0;
   z-index: 2;
 }
-
+.mask_slider{
+  position:absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: url(../images/mask_slider.png);
+  background-position-x: center;
+}
 .carousel {
   background: #808c80;
+}
+.carousel-caption{
+  top: 161px;
+  bottom: unset;
+}
+.carousel-caption h3{
+  font-weight: 300;
+  font-size: 41px;
+  color: #f8f9f9;
+  text-transform: uppercase;
+  line-height: 45px;
+  margin-bottom: 5px;
+}
+.carousel-caption h2{
+  font-weight: 900;
+  font-size: 56px;
+  color: #f8f9f9;
+  line-height: 61px;
+  margin-bottom: 37px;
+}
+.carousel-caption h2 span{
+  font-weight: normal;
+}
+
+a.btn.btn_verde {
+  background: #6ed25b;
+  color: #FFF;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-size: 13px;
+  width: 295px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.06em;
+}
+
+/* Quem Somos */
+
+section.quem_somos {
+  padding-top: 100px;
+  padding-bottom: 29px;
+  position: relative;
+  background-image: url(../images/bg-quem.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.sprite {
+  background: url('../images/sprite.png');
+  background-repeat: no-repeat;
+}
+.title {
+  font-size: 22px;
+  font-weight: normal;
+  color: #000;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.quem_somos .title {
+ padding-bottom: 40px;
+}
+.texto_quem {
+  padding-left: 56px;
+}
+.texto_quem h3 {
+  color: #000;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.texto_quem p {
+  color: #424d50;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+}
+.imagem_quem img {
+  position: relative;
+  left: -106px;
+  top: 38px;
+}
+.move .title {
+  color: #3c7e32;
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.iconeMissao {
+  width: 49px;
+  height: 37px;
+  background-position: -81px 2px;
+}
+.iconeVisao {
+  width: 43px;
+  height: 44px;
+  background-position: -116px -1px;
+}
+.iconeValores {
+  width: 59px;
+  height: 49px;
+  background-position: -146px 0px;
+}
+.move h5 {
+  padding-left: 12px;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 800;
+}
+
+/* Abrir */
+
+.open {
+  position: absolute;
+  background: #fff;
+  padding-top: 15px;
+  padding-left: 22px;
+  padding-bottom: 10px;
+  left: -97px;
+  width: 268px;
+  top: 68px;
+  box-shadow: 0px 0px 21px 0px rgba(117, 117, 117, 0.33); 
+}
+.open::after {
+  content: '';
+  position: absolute;
+  top: -22px;
+  left: 43%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 23px 23px 23px;
+  border-color: transparent transparent #FFF transparent;
+}
+.open span {
+  color: #6ed25b;
+  font-weight: 800;
+  font-size: 15px;
+}
+.missao {
+  position: relative;
+}
+.visao {
+  position: relative;
+}
+.valores {
+  position: relative;
+}
+
+/* Seu negocio */
+
+.seu_negocio {
+  background: #757575;
+  padding-bottom: 46px;
+}
+.seu_negocio h2 {
+  color: #FFF;
+  padding-top: 50px;
+  padding-bottom: 12px;
+}
+.seu_negocio p {
+  color: #FFF;
+  padding: 0 30px;
+  margin-bottom: 44px;
+  text-align: center;
+}
+.cada_negocio {
+  border-right: 1px solid #6ed25b;
+  padding: 7px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cada_negocio:last-child {
+  border-right: none;
+}
+.seu_negocio h4 {
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6ed25b;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+.iconeAtendemos {
+  width: 79px;
+  height: 76px;
+  float: left;
+  background-position: 2px -25px;
+}
+.iconeAgilidade {
+  width: 66px;
+  height: 77px;
+  float: left;
+  background-position: -77px -39px;
+}
+.iconePreco {
+  width: 78px;
+  height: 80px;
+  float: left;
+  background-position: -144px -43px;
+}
+
+/*Cases */
+
+.case_slider_fade{
+  background: #f1f1f1;
+  height: 470px;
+}
+.imagem_case{
+  width: 50%;
+  position: absolute;
+  height: 470px; 
+  left: 0;
+  top: 0;
+}
+.case_item{
+  position: relative;
+  height: 470px;
+}
+.info_case{
+  padding-left: 50px;
+  padding-top: 58px;
+  padding-right: 0;
+}
+h3.categoria_case {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #6ed25b;
+  letter-spacing: 0.04em;
+  margin-bottom: 3px;
+}
+h2.titulo_case{
+  font-weight: 500;
+  color: #141718;
+  font-size: 25px;
+}
+.descricao_case{
+  font-size: 15px;
+  font-weight: 400;
+  color: #424d50;
+  line-height: 25px;
+  margin-bottom: 28px;
+  margin-top: 10px;
+}
+.miniaturas_case {
+  display: flex;
+}
+.cada_miniatura{
+  position: relative;
+  margin-right: 14px;
+}
+.mask_miniatura{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #c5c5c5d6;
+  color: #3e3e3e;
+  font-size: 22px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+
+/* Produtos seção */
+
+.produtos_sec{
+  padding-top: 67px;
+  padding-bottom: 62px;
+}
+.vidracaria{
+  background:#dcdcdb;
+}
+
+.titulo_cat h2{
+  font-weight: 900;
+  color: #6ed25b;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.cada_item_produto{
+  background:#fff;
+}
+.produto_slick .slick-slide{
+  margin-left: 14px;
+  margin-right: 14px;
+}
+.produto_slick .slick-slide img{
+  width: 100%;
+}
+.produto_slick .slick-slide.active:first-child{
+  margin-left: 0;
+}
+.produto_slick .slick-slide.active:last-child{
+  margin-right: 0;
+}
+.imagem_produto{
+  width: 100%;
+  height: 143px;
+  overflow: hidden;
+}
+.desc_produto{
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 23px;
+  padding-bottom: 25px;
+}
+.desc_produto h3{
+  font-size: 16px;
+  font-weight: 900;
+  color:#6ed25b;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 12px;;
+}
+.desc_produto p{
+  font-weight: normal;
+  font-size: 13px;
+  color: #424d50;
+  line-height: 16px;
 }
