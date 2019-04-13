@@ -1,23 +1,75 @@
+/*Lato font by Adobe*/
+@import url("https://use.typekit.net/knz5mbx.css");
+
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+body{
+  font-family: lato, sans-serif;
+}
+
+/* Header */
+
 .topo_menor {
     background: #6fd25b;
-    padding: 10px 0;
+    padding: 9px 0;
 }
 .topo_menor a {
     color: #0a0b0d;
-    font-weight: bold;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 0.3px;
 }
 .topo_menor a i {
     color: #FFF;
     font-weight: normal;
 }
-.socialTopo i {
-    font-size: 22px;
+.iconTopo span{
+  background: url('../images/sprite.png');
+  width:19px;
+  height: 19px;
+  float: left;
+  margin-right: 10px;
+}
+.iconTopo{
+  margin-right: 41px;
+}
+.iconTopo .whats_ico{
+  background-position: 0px -1px;
+}
+.iconTopo .phone_ico {
+  background-position: -18px -1px;
 }
 .topo_maior {
     background: #0a0b0d;
 }
 
+.socialTopo{
+  margin-left: 37px;
+  margin-right: 8px;
+}
 
+.socialTopo a{
+  background: url('../images/sprite.png');
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;  
+}
+
+.socialTopo a.fb_icon{
+  background-position: -39px -1px;
+}
+
+.socialTopo a.insta_icon{
+  background-position: -61px -1px;
+}
+
+/* MENU STYLES */
 .active .nav-link {
     color: #6fd25b;
 }
@@ -71,7 +123,33 @@ nav.stroke ul li a:hover:after {
   
 a.nav-link {
     padding: 43px 0px 39px 0 !important;
+    font-weight: 500;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    font-size: 13px;
+    letter-spacing: 2px;
 }
 .navbar {
     padding: 0;
+}
+a.navbar-brand {
+  padding-left: 41px;
+}
+
+/* SLider */
+.mask_right{
+  position:absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+.mask_left{
+  position:absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.carousel {
+  background: #808c80;
 }
