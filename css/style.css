@@ -11,6 +11,10 @@ body{
   font-family: lato, sans-serif;
 }
 
+a{
+  transition: 0.6s
+}
+
 /* Header */
 
 .topo_menor {
@@ -97,7 +101,7 @@ nav ul {
     transition: all .5s;
   }
   nav ul li a:hover {
-    color: #555;
+    color: #6fd25b;
   }
   /* stroke */
 nav.stroke ul li a,
@@ -279,6 +283,7 @@ section.quem_somos {
 /* Abrir */
 
 .open {
+  display: none;
   position: absolute;
   background: #fff;
   padding-top: 15px;
@@ -288,6 +293,9 @@ section.quem_somos {
   width: 268px;
   top: 68px;
   box-shadow: 0px 0px 21px 0px rgba(117, 117, 117, 0.33); 
+}
+.toggle_button{
+  cursor:pointer;
 }
 .open::after {
   content: '';
@@ -373,10 +381,22 @@ section.quem_somos {
 
 /*Cases */
 
+.cases h2.title{
+  margin-top: 69px;
+  margin-bottom: 23px;
+}
+.cases h3.subtitle_cases{
+  font-size: 25px;
+  font-weight: 500;
+  color: #141718;
+  margin-bottom: 38px;
+}
+
 .case_slider_fade{
   background: #f1f1f1;
   height: 470px;
 }
+
 .imagem_case{
   width: 50%;
   position: absolute;
@@ -420,6 +440,23 @@ h2.titulo_case{
 .cada_miniatura{
   position: relative;
   margin-right: 14px;
+  display: none;
+  background: #3c3c3c;
+}
+.cada_miniatura img {
+  cursor: pointer;
+}
+.cada_miniatura:hover img{
+  mix-blend-mode: luminosity;
+}
+.miniaturas_case .cada_miniatura:nth-child(1){
+  display: block;
+}
+.miniaturas_case .cada_miniatura:nth-child(2){
+  display: block;
+}
+.miniaturas_case .cada_miniatura:nth-child(3){
+  display: block;
 }
 .mask_miniatura{
   position: absolute;
@@ -456,6 +493,7 @@ h2.titulo_case{
 
 .cada_item_produto{
   background:#fff;
+  transition: 0.6s;
 }
 .produto_slick .slick-slide{
   margin-left: 14px;
@@ -494,4 +532,364 @@ h2.titulo_case{
   font-size: 13px;
   color: #424d50;
   line-height: 16px;
+}
+
+.serralheria{
+  background: #f1f1f1;
+}
+
+/* Orcamento */
+
+.orcamento {
+  background: url(../images/bg-orcamento.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 197px;
+}
+
+.conteudo_orcamento {
+  display: flex;
+  max-height: 197px;
+}
+
+.homem {
+  position: relative;
+  top: -23px;
+  padding-left: 90px;
+  padding-right: 98px;
+}
+
+.orcamento h2 {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 33px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.btn_preto {
+  background: #414141;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 13px;
+  width: 224px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  line-height: 10px;
+  justify-content: center;
+  position: relative;
+  left: 17px;
+  letter-spacing: 0.06em;
+  margin-top: 23px;
+}
+
+/* Depoimentos */
+
+.depoimentos {
+  padding-bottom: 72px;
+}
+
+.depoimentos_lista p {
+  padding-right: 69px;
+  padding-left: 20px;
+  line-height: 25px;
+  font-style: italic;
+  color: #424d50;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: -6px;
+}
+.padding-imagem {
+  padding-left: 117px;
+  padding-right: 0;
+}
+
+.autor {
+  padding-left: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #414141;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+
+.autor span {
+  display: block;
+}
+
+.autor span:last-child {
+  color: #6ed25b;
+}
+
+.depoimentos h2 {
+  color: #3c7e32;
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+
+/*Nossos Contatos*/
+.nossos_contatos{
+	background: #414141;	text-align: center;
+    padding-top:57px;
+    padding-bottom: 53px;
+}
+.nossos_contatos h2{
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+
+.nossos_contatos h3 a{
+	font-size: 22px;
+	color: #6ed25b;
+	letter-spacing: 0.05em;
+	font-weight: 800;
+}
+.nossos_contatos span{
+  background-image: url(../images/sprite.png);
+  float: left;
+  margin-right: 17px;
+  width: 30px;
+  height: 30px;
+}
+.icone_whats_contato {
+  background-position: -183px 0px;
+}
+.icone_phone_contato{
+  background-position: -215px 0px;
+}
+
+.cadaContato{
+  border-right: 3px solid #6ed25b;
+  padding: 5px 23px;
+}
+.cadaContato:last-child{
+	border:none;
+}
+
+.cadaContato a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Envie uma mensagem */
+.envie_mensagem{
+	background: #272727;
+	padding-top: 50px;
+	padding-bottom: 44px;
+}
+.envie_mensagem h2{
+  color: #6ed25b;
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.formulario_enviemsg{
+	margin-top: 51px;
+}
+.formulario_enviemsg input{
+	width: 100%;
+	background: #3c3c3c;
+	border: none;
+	border-radius: 3px;
+	margin-bottom:19px;
+	height: 46px;
+}
+.formulario_enviemsg input::placeholder{
+	font-weight: 800;
+	font-size: 13px;
+	color: #6ed25b;
+	text-transform: uppercase;
+}
+.formulario_enviemsg textarea{
+	width: 100%;
+	background: #3c3c3c;
+	border: none;
+	border-radius: 3px;
+	margin-bottom:19px;
+	color: #6ed25b;
+	height: 182px;
+}
+.formulario_enviemsg textarea::placeholder{
+	font-weight: 800;
+	font-size: 13px;
+	color: #6ed25b;
+	text-transform: uppercase;
+}
+.form-control:focus {
+    color: #ffffff;
+    background-color: #3c3c3c;
+    border-color: #ffffff;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #6ed25b;
+}
+.btn_enviar_form{
+	background: #6ed25b;
+	color: #FFF;
+	font-weight: 800;
+	font-size: 15px;
+  width: 292px;
+  height: 42px;
+	border-radius: 3px;
+}
+
+/* FILIAL */
+.localizacao_contato{
+	padding-top: 54px;
+	padding-bottom: 68px;
+	background: #e4e4e4;
+}
+
+.endereco_localizacao p{
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #414141;
+  margin-top: 10px;
+}
+
+.facebook_contato{
+  width: 35px;
+  height: 35px;
+  margin-right: 4px;
+  background-image: url(../images/sprite.png);
+  background-position: -247px 0px;
+}
+.instagram_contato{
+  width: 35px;
+  height: 35px;
+  margin-right: 4px;
+  background-image: url(../images/sprite.png);
+  background-position: -287px 0px;
+}
+.texto_contato{
+	font-size: 18px;
+	color: #414141;
+	line-height: 19px;
+  margin-left: 15px;
+  font-weight: 500;
+}
+.social_contato{
+	margin-top: 16px;
+}
+
+/* Slick Arrows */
+
+.slick-next:before, .slick-prev:before{
+  background-image: url(../images/sprite.png);
+  width: 20px;
+  height: 30px;
+  display: block;
+}
+.slick-next:before{
+  content: '';
+  background-position: -340px 0px;
+}
+.slick-prev:before{
+  content: '';
+  background-position: -323px 0px;
+}
+
+/* Carousel arrows */
+
+.carousel-control-next, .carousel-control-prev{
+  z-index: 4;
+  width: 17%;
+  justify-content: flex-start;
+  opacity: 1;
+}
+a.carousel-control-next{
+  justify-content: flex-end;
+}
+
+.container.setas_slide {
+  position: absolute;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-control-prev-icon{
+  background: url(../images/sprite.png);
+  width: 20px;
+  height: 30px;
+  background-position: -323px 0px;
+}
+.carousel-control-next-icon{
+  background: url(../images/sprite.png);
+  width: 20px;
+  height: 30px;
+  background-position: -340px 0px;
+}
+
+/* Rodape */
+.menuRoda ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.menuRoda a {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  color: #272727;
+  margin-right: 25px;
+}
+.menuRoda li:last-child a {
+  margin-right: 0;
+}
+.footer_top {
+  background: #6ed25b;
+  padding: 24px 0;
+}
+.footer_bottom {
+  background: #272727;
+  padding-top: 13px;
+  padding-bottom: 12px;
+}
+.footer_bottom .socialTopo {
+  margin-left: -21px;
+}
+.menuRoda {
+  display: flex;
+  align-items: center;
+}
+
+.footer_bottom a {
+  font-weight: 800;
+  color: #6ed25b;
+  font-size: 13px;
+}
+
+
+/*Hover's */
+
+a.btn.btn_verde:hover {
+  background: #414141;
+  color: #6fd25b;
+}
+
+.btn_preto:hover {
+  background: #ffffff;
+  color: #414141;
+  font-weight: bold;
+}
+
+.menuRoda a:hover {
+  text-decoration: none;
+  font-weight: 800;
+  color: #FFF;
+}
+
+.cada_item_produto:hover {
+  box-shadow: 0px 4px 11px 0px rgba(117, 117, 117, 0.33);
 }

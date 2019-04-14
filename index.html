@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Grupo Verdes Campos - Vidraçaria e Serralheria</title>
@@ -69,15 +70,26 @@
                     <a href="#" class="btn btn_verde">Conheça nossos Serviços</a>
                 </div>                
               </div>
+              <div class="carousel-item">
+                    <img class="" src="images/slide01.png" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Referência em</h3>
+                        <h2>Serralheria <span>e</span> Vidros</h2>
+                        <a href="#" class="btn btn_verde">Conheça nossos Serviços</a>
+                    </div>                
+                  </div>              
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            <div class="container setas_slide">
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                </a>
+            </div>
+
         </div>
     </section>
     <section class="quem_somos">
@@ -95,7 +107,7 @@
                     <div class="move">
                         <h2 class="title">O que nos move</h2>
                         <div class="d-flex justify-content-center">
-                            <div class="missao d-flex justify-content-start">
+                            <div class="missao d-flex justify-content-start toggle_button">
                                 <div class="sprite iconeMissao"></div>
                                 <h5>Nossa Missão</h5>
                                 <div class="open missao_open">
@@ -103,7 +115,7 @@
                                     <p>Quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisc</p>
                                 </div>
                             </div>
-                            <div class="visao d-flex justify-content-start">
+                            <div class="visao d-flex justify-content-start toggle_button">
                                 <div class="sprite iconeVisao"></div>
                                 <h5>Nossa Visão</h5>
                                 <div class="open visao_open">
@@ -111,7 +123,7 @@
                                     <p>Quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisc</p>
                                 </div>
                             </div>
-                            <div class="valores d-flex justify-content-start">
+                            <div class="valores d-flex justify-content-start toggle_button">
                                 <div class="sprite iconeValores"></div>
                                 <h5>Nossos Valores</h5>
                                 <div class="open valores_open">
@@ -147,9 +159,8 @@
     </section>    
     <section class="cases">
         <div class="container">
-            <div class="titulo_cases">
-                    titulo auqi
-            </div>
+            <h2 class="title">Cases</h2>
+            <h3 class="subtitle_cases text-center">Conheça nossos projetos entregues</h3>
         </div>
         <div class="case_slider_fade">
             <div class="case_item">
@@ -172,14 +183,10 @@
                                 <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisci vcidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                             </div>
                             <div class="miniaturas_case">
-                                    <div class="cada_miniatura"><img src="images/madero_miniatura.jpg" alt=""></div>
-                                    <div class="cada_miniatura"><img src="images/madero_miniatura.jpg" alt=""></div>
-                                    <div class="cada_miniatura">
-                                        <img src="images/madero_miniatura.jpg" alt="">
-                                        <div class="mask_miniatura">
-                                            +3
-                                        </div>
-                                    </div>
+                                <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero1"><img src="images/madero_miniatura.jpg" alt=""></a></div>
+                                <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero1"><img src="images/madero_miniatura.jpg" alt=""></a></div>
+                                <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero1"><img src="images/madero_miniatura.jpg" alt=""></a></div>
+                                <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero1"><img src="images/madero_miniatura.jpg" alt=""></a></div>
                             </div>
                         </div>
                     </div>
@@ -205,14 +212,12 @@
                                     <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisci vcidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                                 </div>
                                 <div class="miniaturas_case">
-                                    <div class="cada_miniatura"><img src="images/madero_miniatura.jpg" alt=""></div>
-                                    <div class="cada_miniatura"><img src="images/madero_miniatura.jpg" alt=""></div>
-                                    <div class="cada_miniatura">
-                                        <img src="images/madero_miniatura.jpg" alt="">
-                                        <div class="mask_miniatura">
-                                            +6
-                                        </div>
-                                    </div>
+                                    <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero2"><img src="images/madero_miniatura.jpg" alt=""></a></div>
+                                    <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero2"><img src="images/madero_miniatura.jpg" alt=""></a></div>
+                                    <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero2"><img src="images/madero_miniatura.jpg" alt=""></a></div>
+                                    <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero2"><img src="images/madero_miniatura.jpg" alt=""></a></div>
+                                    <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero2"><img src="images/madero_miniatura.jpg" alt=""></a></div>
+                                    <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero2"><img src="images/madero_miniatura.jpg" alt=""></a></div>
                                 </div>
                             </div>
                         </div>
@@ -274,9 +279,203 @@
             </div>
         </div>
     </section>
+    <section class="produtos_sec serralheria">
+        <div class="container">
+            <div class="titulo_cat text-center">
+                <h2>serralheria</h2>
+            </div>
+            <div class="produtos_vidracaria produto_slick">
+                <div class="cada_item_produto">
+                    <div class="imagem_produto">
+                        <img src="images/vidracaria01.jpg" alt="">
+                    </div>
+                    <div class="desc_produto">
+                        <h3>Box</h3>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+                </div>
+                <div class="cada_item_produto">
+                    <div class="imagem_produto">
+                        <img src="images/vidracaria01.jpg" alt="">
+                    </div>
+                    <div class="desc_produto">
+                        <h3>Box</h3>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+                </div>
+                <div class="cada_item_produto">
+                    <div class="imagem_produto">
+                        <img src="images/vidracaria01.jpg" alt="">
+                    </div>
+                    <div class="desc_produto">
+                        <h3>Box</h3>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+                </div>
+                <div class="cada_item_produto">
+                    <div class="imagem_produto">
+                        <img src="images/vidracaria01.jpg" alt="">
+                    </div>
+                    <div class="desc_produto">
+                        <h3>Box</h3>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+                </div>
+                <div class="cada_item_produto">
+                    <div class="imagem_produto">
+                        <img src="images/vidracaria01.jpg" alt="">
+                    </div>
+                    <div class="desc_produto">
+                        <h3>Box</h3>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+                </div>                                                                                              
+            </div>
+        </div>
+    </section>
+    <section class="orcamento">
+        <div class="container conteudo_orcamento">
+            <div class="homem">
+                <img src="images/homem.png" alt="">
+            </div>
+            <div class="textoOrcamento">
+                <h2>Faça um orçamento <br> agora mesmo</h2>
+                <a href="#" class="btn btn_preto">Entrar em Contato</a>
+            </div>
+        </div>
+    </section>
+    <section class="depoimentos">
+        <div class="container">
+            <h2 class="title">Confiança se constrói com agilidade e qualidade</h2>
+            <div class="depoimentos_lista">
+                <div class="cadaDepoimento"> <!-- Depoimento start -->
+                    <div class="row">
+                        <div class="col-lg-4 padding-imagem">
+                            <img src="images/depoimento.jpg" alt="">
+                        </div> 
+                        <div class="col-lg-8">
+                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisci vcidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>   
+                            <div class="autor">
+                                <span>Junior Duski</span>
+                                <span>CEO MADERO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Depoimento end -->
+                <div class="cadaDepoimento"> <!-- Depoimento start -->
+                    <div class="row">
+                        <div class="col-lg-4 padding-imagem">
+                            <img src="images/depoimento.jpg" alt="">
+                        </div> 
+                        <div class="col-lg-8">
+                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisci vcidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>   
+                            <div class="autor">
+                                <span>Junior Duski</span>
+                                <span>CEO MADERO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Depoimento end -->
+            </div>
+        </div>
+    </section>    
+    <section class="nossos_contatos">
+        <div class="container">
+            <h2 class="text-center">Nossos Contatos</h2>
+            <div class="row pt-4 px-0">
+                <div class="col-md-7 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 cadaContato">
+                            <h3><a href="tel:+554130190576" class="d-flex align-items-center"><span class="icone_whats_contato"></span>(41) 99602-1975</a></h3>
+                        </div>
+                        <div class="col-lg-6 col-md-6 cadaContato">
+                            <h3><a href="tel:+554130190576" class="d-flex align-items-center"><span class="icone_phone_contato"></span>(41) 3383-8751 </a></h3>
+                        </div>
+                    </div>
+                </div>                                              
+            </div>
+        </div>
+    </section>
+    <section class="envie_mensagem">
+      <div class="container">
+          <h2 class="text-center">ENVIE UMA MENSAGEM</h2>
+          <form action="#" class="formulario_enviemsg px-md-0 px-3">
+              <div class="row">
+                  <div class="col-md-12 px-md-0 px-0">
+                      <input type="text" class="form-control" placeholder="NOME COMPLETO:" name="nome">
+                  </div>     
+              </div>
+              <div class="row">
+                  <div class="col-md-8 pr-md-3 px-0">
+                      <input type="text" class="form-control" placeholder="E-MAIL:" name="email">
+                  </div>
+                  <div class="col-md-4 pr-md-0 px-0">
+                      <input type="text" class="form-control" placeholder="TELEFONE:" name="telefone">
+                  </div>                
+              </div>
+              <div class="row">
+                  <div class="col-md-12 px-0">
+                      <textarea name="mensagem" placeholder="MENSAGEM" class="form-control"></textarea>
+                  </div>
+              </div>
+              <div class="row">
+                  <button type="submit" class="btn btn_enviar_form mx-auto">ENVIAR</button>
+              </div>
+          </form>        
+      </div>
+    </section>
+    <section class="localizacao_contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 endereco_localizacao text-md-left text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.106414718113!2d-49.29109448498492!3d-25.46812188377089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3637eb57f7d%3A0xae8663bfdb04933c!2sR.+Jo%C3%A3o+Rodolfo+Schlenker%2C+418+-+%C3%81gua+Verde%2C+Curitiba+-+PR%2C+80620-030!5e0!3m2!1spt-BR!2sbr!4v1554295552095!5m2!1spt-BR!2sbr" width="500" height="309" style="border:0; width: 100%"  allowfullscreen></iframe>
+                    <p>r. joão rodolfo schlenker, 418 curitiba - pr</p>
+                </div>
+                <div class="col-md-4 social_widget pr-md-0 text-md-left text-center">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fagdred&tabs=timeline&width=300&height=309&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=336269550452887" width="306" height="309" style="border:none;overflow:hidden" allow="encrypted-media"></iframe>
+                    <div class="social_contato d-flex flex-wrap align-items-center">
+                          <a href=""><div class="facebook_contato"></div></a>                          
+                          <a href=""><div class="instagram_contato"></div></a>                                              
+                          <div class="texto_contato">
+                            <i>Acesse nossas paginas <br> nas redes sociais</i> 
+                          </div> 
+                    </div>
+                </div>                                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_top">
+            <div class="container d-flex">
+                <div class="logoRoda mr-auto"><img src="images/logoroda.svg" alt=""></div>
+                <div class="menuRoda">
+                    <ul class="d-flex">
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Serviços e Cases</a></li>
+                        <li><a href="#">Depoimentos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container d-flex">
+                <div class="red mr-auto"></div>
+                <div class="d-flex flex-row-reverse align-items-center">
+                    <div class="socialTopo">
+                        <a href="#" class="fb_icon"></a>
+                        <a href="#" class="insta_icon"></a>
+                    </div>
+                    <div class="iconTopo phone"><a href="#" class="d-flex align-items-center"><span class="phone_ico"></span> (41) 3383-8751</a></div>
+                    <div class="iconTopo whats"><a href="#" class="d-flex align-items-center"><span class="whats_ico"></span> (41) 99602-1975</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>        
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
 <script src="js/script.js"></script>
 </body>

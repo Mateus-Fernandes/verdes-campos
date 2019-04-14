@@ -1,3 +1,18 @@
+$(function() {
+    $(".toggle_button").click(function(){
+        $(".open", this).toggle('slow');
+    });
+    $(".miniaturas_case").each(function(){
+        var count = $(this).children(".cada_miniatura").length;
+        count = count - 3;
+        if(count > 0){
+            $('.cada_miniatura:nth-child(3) a', this).append("<div class='mask_miniatura'>+" + count + "</div>");
+        } 
+    });    
+
+});
+
+
 $('.case_slider_fade').slick({
     infinite: true,
     slidesToShow: 1,
@@ -41,4 +56,11 @@ $('.case_slider_fade').slick({
           }
         }
       ]          
+  });
+  
+  $('.depoimentos_lista').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false
   });  
