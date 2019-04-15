@@ -1,0 +1,451 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .mask_slider {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background: url(../images/mask_slider.png);
+        background-position-x: calc(100% - -321px);
+    }
+    .carousel-caption {
+        top: 130px;
+        bottom: unset;
+        width: 562px;
+        left: 50%;
+        transform: translateX(-50%);
+    }    
+    .cada_negocio {
+        flex-direction: column;
+    }
+    a.navbar-brand {
+        padding-left: 0;
+    }
+    section.quem_somos {
+        padding-top: 38px;
+    }
+    .quem_somos .title {
+        padding-bottom: 15px;
+    }
+    .imagem_res {
+        margin-top: 32px;
+        margin-bottom: 45px;
+    }
+    .move h2.title {
+        text-align: center;
+        padding-bottom: 37px;
+    }
+    .move h5 {
+        padding-left: 12px;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        width: 110px;
+        font-weight: 800;
+    }
+    .iconeMissao {
+        width: 38px;
+    }
+    .iconeVisao {
+        width: 29px;
+    }
+    .iconeValores {
+        width: 45px;
+    }
+    .seu_negocio p {
+        color: #FFF;
+        padding: 0 17px;
+        margin-bottom: 23px;
+    }
+    .seu_negocio h4 {
+        text-align: center;
+        padding-top: 16px;
+    }
+    .cases h2.title {
+        margin-top: 60px;
+    }
+    .imagem_case {
+        width: 35%;}
+    .desc_produto p {
+        margin-bottom: 0;
+    }
+    .homem {
+        position: relative;
+        top: -23px;
+        padding-left: 9px;
+        padding-right: 46px;
+    }
+    .padding-imagem {
+        padding-left: 47px;
+        padding-right: 0;
+    }
+    .depoimentos_lista p {
+        padding-right: 22px;
+        padding-left: 21px;
+    }
+    .social_widget iframe {
+        max-width: 104%;
+    }
+    .menuRoda a {
+        margin-right: 12px;
+    }
+    .footer_top .container.d-flex {
+        padding: 0;
+    }
+    .mobile {
+        display: none !important;
+    }
+    .seu_negocio {
+        background: #757575;
+        padding-bottom: 33px;
+    }
+}
+
+
+
+@media (max-width: 480px) 
+{
+    header .socialTopo {
+        display: none;
+    }
+    header .iconTopo {
+        margin-right: 26px;
+        margin-left: 4px;
+    }
+    header .phone {
+        margin-right: 0px;
+    }
+    .topo_menor a {
+        font-size: 13px;
+    }
+    .mask_slider {
+        display: none;
+    }
+    .topo_menor .container {
+        justify-content: center;
+    }
+    /* Slider */
+    .carousel-caption {
+        top: 37px;
+        bottom: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 296px;
+    }
+    .carousel-control-next {
+        right: 6px;
+    }
+    .carousel-control-prev {
+        left: 6px;
+    }
+    .carousel-caption h3 {
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+    .carousel-caption h2 {
+        font-size: 53px;
+        margin-bottom: 20px;
+    }
+    a.btn.btn_verde {
+        width: 250px;
+    }
+    /* quem */
+    .imagem_quem {
+        order: 1;
+    }
+    .texto_quem h3 {
+        text-align: center;
+        font-size: 24px;
+    }
+    .quem_somos .title {
+        padding-bottom: 19px;
+        padding-left: 0;
+        text-align: center;
+    }
+    section.quem_somos {
+        padding-top: 55px;
+    }
+    .texto_quem p {
+        text-align: center;
+    }
+    .texto_quem {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .todos_icons {
+        flex-direction: column;
+    }
+    .iconeMissao {
+        width: 49px;
+        height: 37px;
+        background-position: -71px 2px;
+    }
+    .iconeVisao {
+        width: 31px;
+        height: 44px;
+        background-position: -115px -1px;
+        margin-left: 14px;
+        margin-right: 6px;
+    }
+    .iconeValores {
+        width: 40px;
+        height: 49px;
+        background-position: -144px 0px;
+        margin-left: 11px;
+        margin-right: 1px;
+    }
+    .missao {
+        margin-bottom: 25px;
+        align-items: center;
+    }
+    .visao {
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .valores {
+        align-items: center;
+    }
+    .open {
+        left: -2px;
+        top: 51px;
+        z-index: 9;
+    }
+    .open p {
+        text-align: left;
+    }
+    .imagem_responsive {
+        position: relative;
+        left: -151px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .imagem_res {
+        overflow: hidden;
+        transform: translateX(-7%);
+        width: 120%;
+        max-width: 373px;
+    }
+    .seu_negocio p {
+        padding: 0 17px;
+    }
+    .seu_negocio h2 {
+        padding-top: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .iconeAtendemos {
+        width: 58px;
+        height: 61px;
+        float: left;
+        background-position: 2px -16px;
+        background-size: 373px;
+    }
+    .iconeAgilidade {
+        width: 52px;
+        height: 61px;
+        float: left;
+        background-position: -56px -28px;
+        background-size: 373px;
+    }
+    .iconePreco {
+        width: 61px;
+        height: 65px;
+        float: left;
+        background-position: -107px -29px;
+        background-size: 373px;
+    }
+    .seu_negocio p {
+        margin-bottom: 29px;
+    }
+    .seu_negocio h4 {
+        width: 200px;
+    }
+    .cada_negocio {
+        padding: 11px 0px;
+    }
+    .seu_negocio {
+        padding-bottom: 35px;
+    }
+    /* cASES */
+    .cases h2.title {
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding-top: 40px;
+    }
+    section.cases {
+        background: #f1f1f1;
+    }
+    .case_item {
+        height: auto;
+    }
+    .case_slider_fade{
+        height: auto;
+    }
+    .homem {
+        display: none;
+    }
+    .ml-mobile{
+        margin-left: -120px;
+        padding-bottom: 20px;
+    }
+    .cada_miniatura {
+        position: relative;
+        margin-right: 13px;
+        display: none;
+        background: #3c3c3c;
+        width: 109px;
+        overflow: hidden;
+        height: 98px;
+    }
+    .miniaturas_case{
+        padding-bottom: 20px;
+    }
+    .produto_slick .slick-slide {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .info_case {
+        padding-left: 25px;
+        padding-top: 0;
+        padding-right: 25px;
+    }
+    .textoOrcamento {
+        width: 100%;
+    }
+    a.btn.btn_preto {
+        margin-left: 10vw;
+        margin-bottom: 33px;
+    }
+    .depoimentos h2 {
+        color: #3c7e32;
+        padding-top: 45px;
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-bottom: 55px;
+    }
+    .padding-imagem {
+        padding-left: 0px;
+        padding-right: 0;
+    }
+    .padding-imagem img{
+        margin:0 auto;
+    }
+    .depoimentos_lista p {
+        padding-top: 28px;
+        text-align: left;
+        padding-left: 46px;
+        padding-right: 21px;
+    }
+    .autor {
+        padding-left: 46px;
+    }
+    .depoimentos {
+        padding-bottom: 35px;
+    }
+    section.nossos_contatos .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .cadaContato {
+        border-right: 0;
+        border-bottom: 3px solid #6ed25b;
+        padding-bottom: 18px;
+        padding-top: 21px;
+    }
+    .cadaContato {
+        justify-content: center;
+        display: flex;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .cadaContato:first-child {
+        padding-top: 0;
+    }
+    .cadaContato:last-child {
+        border: none;
+    }
+    .nossos_contatos h3 a {
+        font-size: 21px;
+    }
+    
+    .nossos_contatos {
+        background: #414141;
+        text-align: center;
+        padding-top: 33px;
+        padding-bottom: 33px;
+    }
+    .envie_mensagem .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .endereco_localizacao p {
+        text-align: left;
+    }
+    .texto_contato {
+        text-align: left;
+    }
+    .localizacao_contato {
+        padding-bottom: 22px;
+    }
+    .social_contato {
+        margin-top: 16px;
+        justify-content: center;
+    }
+    /* rodape */
+    .logoRoda {
+        margin: 0 auto;
+    }
+    .footer_top .d-flex {
+        flex-direction: column;
+    }
+    .menuRoda {
+        display: none;
+    }
+    .onlydesk .socialTopo {
+        display: none;
+    }
+    .iconTopo {
+        margin-right: 20px;
+    }
+    footer .iconTopo.phone {
+        margin-right: 14px;
+    }
+    .mobile {
+        padding-top: 13px;
+    }
+    .footer_bottom .red {
+        display: none;
+    }
+    .redv2 {
+        display: block !important;
+    }
+    .footer_bottom .container.d-flex {
+        justify-content: center;
+    }
+
+    /* arrows */
+    .slick-next {
+        right: -7px;
+    }
+    .slick-prev {
+        left: -5px;
+    }
+    a.navbar-brand {
+        padding-left: 20px;
+    }
+    .topo_maior {
+        background: #0a0b0d;
+        padding: 8px 0px;
+    }
+    .menu .socialTopo {
+        display: flex !important;
+    }
+    .hamburger{
+        display: block;
+    }
+    
+}

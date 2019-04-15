@@ -10,21 +10,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Grupo Verdes Campos - Vidraçaria e Serralheria</title>
   </head>
 <body>
 
-    <header>
+    <header id="menu_site">
         <div class="topo_menor">
             <div class="container d-flex flex-row-reverse align-items-center">
                 <div class="socialTopo">
                     <a href="#" class="fb_icon"></a>
                     <a href="#" class="insta_icon"></a>
                 </div>
-                <div class="iconTopo phone"><a href="#" class="d-flex align-items-center"><span class="phone_ico"></span> (41) 3383-8751</a></div>
-                <div class="iconTopo whats"><a href="#" class="d-flex align-items-center"><span class="whats_ico"></span> (41) 99602-1975</a></div>
+                <div class="iconTopo phone"><a href="tel:+554133838751" class="d-flex align-items-center"><span class="phone_ico"></span> (41) 3383-8751</a></div>
+                <div class="iconTopo whats"><a href="tel:+5541996021975" class="d-flex align-items-center"><span class="whats_ico"></span> (41) 99602-1975</a></div>
             </div>
         </div>
         <div class="topo_maior">
@@ -33,24 +34,38 @@
                     <a class="navbar-brand" href="#">
                         <img src="images/logo.svg" alt="">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <nav class="navigation">
+                        <div class="hamburger">
+                            <span class="bars"></span>
+                        </div>
+                        <div class="menu">
+                        <ul>
+                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="#">Serviços e Cases</a></li>
+                            <li><a href="#">Depoimentos</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                        <div class="socialTopo">
+                            <a href="#" class="fb_icon"></a>
+                            <a href="#" class="insta_icon"></a>
+                        </div>
+                        </div>
+                    </nav>                    
+                    <div class="d-md-block d-none" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                        <a class="nav-link" href="#">Sobre nós
+                        <li class="nav-item">
+                        <a class="nav-link" href="#sobre-nos">Sobre nós
                                 <span class="sr-only">(current)</span>
-                            </a>
+                        </a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços e Cases</a>
+                        <a class="nav-link" href="#servicos_cases">Serviços e Cases</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Depoimentos</a>
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#contato">Contato</a>
                         </li>
                     </ul>
                     </div>
@@ -63,16 +78,24 @@
             <div class="mask_slider"></div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="" src="images/slide01.png" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
+                <picture>
+                    <source media="(max-width: 460px)" srcset="images/slide01-mobile.jpg">
+                    <source media="(min-width: 768px) and (max-width: 1024px)" srcset="images/slide01-ipad.jpg">
+                    <img src="images/slide01.jpg">
+                </picture>
+                <div class="carousel-caption">
                     <h3>Referência em</h3>
                     <h2>Serralheria <span>e</span> Vidros</h2>
                     <a href="#" class="btn btn_verde">Conheça nossos Serviços</a>
                 </div>                
               </div>
               <div class="carousel-item">
-                    <img class="" src="images/slide01.png" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
+                    <picture>
+                        <source media="(max-width: 460px)" srcset="images/slide01-mobile.jpg">
+                        <source media="(min-width: 768px) and (max-width: 1024px)" srcset="images/slide01-ipad.jpg">
+                        <img src="images/slide01.jpg">
+                    </picture>
+                    <div class="carousel-caption">
                         <h3>Referência em</h3>
                         <h2>Serralheria <span>e</span> Vidros</h2>
                         <a href="#" class="btn btn_verde">Conheça nossos Serviços</a>
@@ -92,22 +115,25 @@
 
         </div>
     </section>
-    <section class="quem_somos">
+    <section class="quem_somos" id="sobre-nos">
         <div class="container">
             <h2 class="title">Quem Somos</h2>
             <div class="row">
                 <div class="col-lg-6 imagem_quem">
-                    <img src="images/madeiro.png" alt="Madeiro Burger">
+                    <img src="images/madeiro.png" class="d-lg-block d-none" alt="Madeiro Burger" data-aos="fade-up">
                 </div>
                 <div class="col-lg-6 texto_quem">
-                    <h3>Neque porro quisquam est, qui dolr, adipisci v est, qui dolorem ipsum , consectetur, adipisci velit.</h3>
+                    <h3 data-aos="fade-down">Neque porro quisquam est, qui dolr, adipisci v est, qui dolorem ipsum , consectetur, adipisci velit.</h3>
                     <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisci vcidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                     </p>
-                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci v, consectetur, adipisci v, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                    <div class="move">
-                        <h2 class="title">O que nos move</h2>
-                        <div class="d-flex justify-content-center">
-                            <div class="missao d-flex justify-content-start toggle_button">
+                        <p data-aos="fade-down">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci v, consectetur, adipisci v, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <div class="imagem_res">
+                        <img src="images/madeiro.png" class="d-block d-lg-none imagem_responsive" alt="Madeiro Burger">
+                    </div>
+                        <div class="move">
+                        <h2 class="title" data-aos="fade-down">O que nos move</h2>
+                        <div class="d-flex justify-content-center todos_icons">
+                            <div class="missao d-flex justify-content-start toggle_button" data-aos="fade-down">
                                 <div class="sprite iconeMissao"></div>
                                 <h5>Nossa Missão</h5>
                                 <div class="open missao_open">
@@ -115,7 +141,7 @@
                                     <p>Quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisc</p>
                                 </div>
                             </div>
-                            <div class="visao d-flex justify-content-start toggle_button">
+                            <div class="visao d-flex justify-content-start toggle_button" data-aos="fade-up">
                                 <div class="sprite iconeVisao"></div>
                                 <h5>Nossa Visão</h5>
                                 <div class="open visao_open">
@@ -123,7 +149,7 @@
                                     <p>Quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisc</p>
                                 </div>
                             </div>
-                            <div class="valores d-flex justify-content-start toggle_button">
+                            <div class="valores d-flex justify-content-start toggle_button" data-aos="fade-down">
                                 <div class="sprite iconeValores"></div>
                                 <h5>Nossos Valores</h5>
                                 <div class="open valores_open">
@@ -139,37 +165,37 @@
     </section>
     <section class="seu_negocio">
         <div class="container">
-            <h2 class="title">Seu negócio, sua imagem!</h2>
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            <h2 class="title" data-aos="fade-up">Seu negócio, sua imagem!</h2>
+            <p data-aos="fade-down">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             <div class="row negocios_lista">
-                <div class="col-lg-4 cada_negocio">
+                <div class="col-lg-4 col-md-4 cada_negocio" data-aos="fade-down">
                     <div class="sprite iconeAtendemos"></div>
                     <h4>Atendemos <br> Grandes Marcas</h4>
                 </div>
-                <div class="col-lg-4 cada_negocio">
+                <div class="col-lg-4 col-md-4 cada_negocio" data-aos="fade-up">
                     <div class="sprite iconeAgilidade"></div>
                     <h4>Agilidade <br> na entrega</h4>
                 </div>
-                <div class="col-lg-4 cada_negocio">
+                <div class="col-lg-4 col-md-4 cada_negocio" data-aos="fade-down">
                     <div class="sprite iconePreco"></div>
                     <h4>Preço Justo</h4>
                 </div>
             </div>
         </div>
     </section>    
-    <section class="cases">
+    <section class="cases" id="servicos_cases">
         <div class="container">
-            <h2 class="title">Cases</h2>
-            <h3 class="subtitle_cases text-center">Conheça nossos projetos entregues</h3>
+            <h2 class="title" data-aos="fade-up">Cases</h2>
+            <h3 class="subtitle_cases text-center" data-aos="fade-down">Conheça nossos projetos entregues</h3>
         </div>
-        <div class="case_slider_fade">
+        <div class="case_slider_fade" data-aos="fade-down">
             <div class="case_item">
-                <div class="imagem_case" style="background:url('images/madeiro_case.jpg')">
+                <div class="imagem_case d-md-block d-none" style="background:url('images/madeiro_case.jpg')">
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6"></div>
-                        <div class="col-lg-6 info_case">
+                        <div class="col-lg-6 col-md-4"></div>
+                        <div class="col-lg-6 col-md-8 info_case">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="cabecalho_case">
                                     <h3 class="categoria_case">Container</h3>
@@ -182,6 +208,7 @@
                             <div class="descricao_case">
                                 <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisci vcidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                             </div>
+                            <img src="images/madeiro_case.jpg" alt="" class="d-md-none d-block ml-mobile">
                             <div class="miniaturas_case">
                                 <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero1"><img src="images/madero_miniatura.jpg" alt=""></a></div>
                                 <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero1"><img src="images/madero_miniatura.jpg" alt=""></a></div>
@@ -193,45 +220,45 @@
                 </div>
             </div>
             <div class="case_item">
-                    <div class="imagem_case" style="background:url('images/madeiro_case.jpg')">
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6"></div>
-                            <div class="col-lg-6 info_case">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="cabecalho_case">
-                                        <h3 class="categoria_case">Container</h3>
-                                        <h2 class="titulo_case">Projeto Madero 2</h2>
-                                    </div>
-                                    <div class="logo_case">
-                                        <img src="images/madero_logo.jpg" alt="">
-                                    </div>
+                <div class="imagem_case d-md-block d-none" style="background:url('images/madeiro_case.jpg')">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-4"></div>
+                        <div class="col-lg-6 col-md-8 info_case">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cabecalho_case">
+                                    <h3 class="categoria_case">Container</h3>
+                                    <h2 class="titulo_case">Projeto Madero</h2>
                                 </div>
-                                <div class="descricao_case">
-                                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisci vcidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                <div class="logo_case">
+                                    <img src="images/madero_logo.jpg" alt="">
                                 </div>
-                                <div class="miniaturas_case">
-                                    <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero2"><img src="images/madero_miniatura.jpg" alt=""></a></div>
-                                    <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero2"><img src="images/madero_miniatura.jpg" alt=""></a></div>
-                                    <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero2"><img src="images/madero_miniatura.jpg" alt=""></a></div>
-                                    <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero2"><img src="images/madero_miniatura.jpg" alt=""></a></div>
-                                    <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero2"><img src="images/madero_miniatura.jpg" alt=""></a></div>
-                                    <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero2"><img src="images/madero_miniatura.jpg" alt=""></a></div>
-                                </div>
+                            </div>
+                            <div class="descricao_case">
+                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisci vcidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                            </div>
+                            <img src="images/madeiro_case.jpg" alt="" class="d-md-none d-block ml-mobile">
+                            <div class="miniaturas_case">
+                                <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero1"><img src="images/madero_miniatura.jpg" alt=""></a></div>
+                                <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero1"><img src="images/madero_miniatura.jpg" alt=""></a></div>
+                                <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero1"><img src="images/madero_miniatura.jpg" alt=""></a></div>
+                                <div class="cada_miniatura"><a href="images/madeiro_case.jpg" data-lightbox="madero1"><img src="images/madero_miniatura.jpg" alt=""></a></div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </section>
     <section class="produtos_sec vidracaria">
         <div class="container">
             <div class="titulo_cat text-center">
-                <h2>vidraçaria</h2>
+                <h2 data-aos="fade-down">vidraçaria</h2>
             </div>
             <div class="produtos_vidracaria produto_slick">
-                <div class="cada_item_produto">
+                <a href="#" data-toggle="modal" data-target="#modal_produto">
+                <div class="cada_item_produto" data-aos="fade-down">
                     <div class="imagem_produto">
                         <img src="images/vidracaria01.jpg" alt="">
                     </div>
@@ -240,7 +267,9 @@
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
                     </div>
                 </div>
-                <div class="cada_item_produto">
+                </a>
+                <a href="#" data-toggle="modal" data-target="#modal_produto">
+                <div class="cada_item_produto" data-aos="fade-up">
                     <div class="imagem_produto">
                         <img src="images/vidracaria01.jpg" alt="">
                     </div>
@@ -249,7 +278,9 @@
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
                     </div>
                 </div>
-                <div class="cada_item_produto">
+                </a>
+                <a href="#" data-toggle="modal" data-target="#modal_produto">
+                <div class="cada_item_produto" data-aos="fade-down">
                     <div class="imagem_produto">
                         <img src="images/vidracaria01.jpg" alt="">
                     </div>
@@ -258,7 +289,9 @@
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
                     </div>
                 </div>
-                <div class="cada_item_produto">
+                </a>
+                <a href="#" data-toggle="modal" data-target="#modal_produto">
+                <div class="cada_item_produto" data-aos="fade-up">
                     <div class="imagem_produto">
                         <img src="images/vidracaria01.jpg" alt="">
                     </div>
@@ -267,7 +300,9 @@
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
                     </div>
                 </div>
-                <div class="cada_item_produto">
+                </a>
+                <a href="#" data-toggle="modal" data-target="#modal_produto">
+                <div class="cada_item_produto" data-aos="fade-down">
                     <div class="imagem_produto">
                         <img src="images/vidracaria01.jpg" alt="">
                     </div>
@@ -275,17 +310,19 @@
                         <h3>Box</h3>
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
                     </div>
-                </div>                                                                                              
+                </div>                                                       
+                </a>                                       
             </div>
         </div>
     </section>
     <section class="produtos_sec serralheria">
         <div class="container">
             <div class="titulo_cat text-center">
-                <h2>serralheria</h2>
+                <h2 data-aos="fade-down">serralheria</h2>
             </div>
             <div class="produtos_vidracaria produto_slick">
-                <div class="cada_item_produto">
+                <a href="#" data-toggle="modal" data-target="#modal_produto">
+                <div class="cada_item_produto" data-aos="fade-down">
                     <div class="imagem_produto">
                         <img src="images/vidracaria01.jpg" alt="">
                     </div>
@@ -294,7 +331,9 @@
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
                     </div>
                 </div>
-                <div class="cada_item_produto">
+                </a>
+                <a href="#" data-toggle="modal" data-target="#modal_produto">
+                <div class="cada_item_produto" data-aos="fade-up">
                     <div class="imagem_produto">
                         <img src="images/vidracaria01.jpg" alt="">
                     </div>
@@ -303,7 +342,9 @@
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
                     </div>
                 </div>
-                <div class="cada_item_produto">
+                </a>
+                <a href="#" data-toggle="modal" data-target="#modal_produto">
+                <div class="cada_item_produto" data-aos="fade-down">
                     <div class="imagem_produto">
                         <img src="images/vidracaria01.jpg" alt="">
                     </div>
@@ -312,7 +353,9 @@
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
                     </div>
                 </div>
-                <div class="cada_item_produto">
+                </a>
+                <a href="#" data-toggle="modal" data-target="#modal_produto">
+                <div class="cada_item_produto" data-aos="fade-up">
                     <div class="imagem_produto">
                         <img src="images/vidracaria01.jpg" alt="">
                     </div>
@@ -321,7 +364,9 @@
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
                     </div>
                 </div>
-                <div class="cada_item_produto">
+                </a>
+                <a href="#" data-toggle="modal" data-target="#modal_produto">
+                <div class="cada_item_produto" data-aos="fade-down">
                     <div class="imagem_produto">
                         <img src="images/vidracaria01.jpg" alt="">
                     </div>
@@ -329,35 +374,110 @@
                         <h3>Box</h3>
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
                     </div>
-                </div>                                                                                              
+                </div>                                                       
+                </a>                                       
             </div>
         </div>
     </section>
+    <!-- Modal Produtos -->
+    <div class="modal fade" id="modal_produto" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>                                
+                    <h2 class="text-center">Fachada em vidro</h2>
+                    <div class="row modal_produto_content">
+                        <div class="col-lg-8">
+                            <div class="imagens_modal_produto">
+                                <div><img src="images/produto_modal.jpg" alt=""></div>
+                                <div><img src="images/produto_modal.jpg" alt=""></div>
+                                <div><img src="images/produto_modal.jpg" alt=""></div>
+                            </div>
+                        </div>  
+                        <div class="col-lg-4">
+                            <h3>Curitiba - PR</h3>
+                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non</p>
+                            <div class="minituras_modal_produto d-flex flex-wrap">
+                                <a href="#"><img src="images/miniatura_modal_produto.jpg" alt=""></a>
+                                <a href="#"><img src="images/miniatura_modal_produto.jpg" alt=""></a>
+                                <a href="#"><img src="images/miniatura_modal_produto.jpg" alt=""></a>
+                                <a href="#"><img src="images/miniatura_modal_produto.jpg" alt=""></a>
+                                <a href="#"><img src="images/miniatura_modal_produto.jpg" alt=""></a>
+                                <a href="#"><img src="images/miniatura_modal_produto.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="orcamento">
         <div class="container conteudo_orcamento">
             <div class="homem">
-                <img src="images/homem.png" alt="">
+                <img src="images/homem.png" alt="" data-aos="fade-down">
             </div>
             <div class="textoOrcamento">
-                <h2>Faça um orçamento <br> agora mesmo</h2>
-                <a href="#" class="btn btn_preto">Entrar em Contato</a>
+                <h2 data-aos="fade-up">Faça um orçamento <br> agora mesmo</h2>
+                <a href="#" class="btn btn_preto" data-toggle="modal" data-target="#orcamento_modal" data-aos="fade-down">Entrar em Contato</a>
+                <!-- Modal ao clicar em entrar em contato -->
+                <div class="modal fade" id="orcamento_modal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                </button>                                
+                                <h2>Envie uma Mensagem</h2>
+                                <form action="#" class="formulario_orcamento px-md-2 px-3">
+                                    <div class="row">
+                                        <div class="col-md-6 pr-2">
+                                            <input type="text" class="form-control" placeholder="NOME" name="nome">
+                                        </div>
+                                        <div class="col-md-6 pl-2">
+                                            <input type="text" class="form-control" placeholder="E-MAIL" name="email">
+                                        </div>                                         
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 pr-2">
+                                            <input type="text" class="form-control" placeholder="TELEFONE" name="telefone">
+                                        </div>
+                                        <div class="col-md-4 px-2">
+                                            <input type="text" class="form-control" placeholder="SERVIÇO" name="servico">
+                                        </div>
+                                        <div class="col-md-4 pl-2">
+                                            <input type="text" class="form-control" placeholder="MEDIDAS" name="medidas">
+                                        </div>                                                     
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <textarea name="outras" placeholder="OUTRAS INFORMAÇÕES" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <button type="submit" class="btn btn_enviar_form orcamento_envia mx-auto">ENVIAR</button>
+                                    </div>
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="depoimentos">
+    <section class="depoimentos" id="depoimentos">
         <div class="container">
-            <h2 class="title">Confiança se constrói com agilidade e qualidade</h2>
+            <h2 class="title" data-aos="fade-down">Confiança se constrói com agilidade e qualidade</h2>
             <div class="depoimentos_lista">
                 <div class="cadaDepoimento"> <!-- Depoimento start -->
                     <div class="row">
-                        <div class="col-lg-4 padding-imagem">
-                            <img src="images/depoimento.jpg" alt="">
+                        <div class="col-md-4 padding-imagem">
+                            <img src="images/depoimento.jpg" alt="" data-aos="fade-up">
                         </div> 
-                        <div class="col-lg-8">
-                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisci vcidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>   
+                        <div class="col-md-8">
+                            <p data-aos="fade-down">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in, consectetur, adipisci v, consectetur, adipisci vcidunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>   
                             <div class="autor">
-                                <span>Junior Duski</span>
-                                <span>CEO MADERO</span>
+                                <span data-aos="fade-up">Junior Duski</span>
+                                <span data-aos="fade-down">CEO MADERO</span>
                             </div>
                         </div>
                     </div>
@@ -379,17 +499,17 @@
             </div>
         </div>
     </section>    
-    <section class="nossos_contatos">
+    <section class="nossos_contatos" id="contato">
         <div class="container">
-            <h2 class="text-center">Nossos Contatos</h2>
+            <h2 class="text-center" data-aos="fade-down">Nossos Contatos</h2>
             <div class="row pt-4 px-0">
-                <div class="col-md-7 mx-auto">
+                <div class="col-lg-7 col-md-10 mx-auto">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 cadaContato">
-                            <h3><a href="tel:+554130190576" class="d-flex align-items-center"><span class="icone_whats_contato"></span>(41) 99602-1975</a></h3>
+                        <div class="col-lg-6 col-md-6 cadaContato" data-aos="fade-down">
+                            <h3><a href="tel:+5541996021975" class="d-flex align-items-center"><span class="icone_whats_contato"></span>(41) 99602-1975</a></h3>
                         </div>
-                        <div class="col-lg-6 col-md-6 cadaContato">
-                            <h3><a href="tel:+554130190576" class="d-flex align-items-center"><span class="icone_phone_contato"></span>(41) 3383-8751 </a></h3>
+                        <div class="col-lg-6 col-md-6 cadaContato" data-aos="fade-up">
+                            <h3><a href="tel:+554133838751" class="d-flex align-items-center"><span class="icone_phone_contato"></span>(41) 3383-8751 </a></h3>
                         </div>
                     </div>
                 </div>                                              
@@ -398,28 +518,28 @@
     </section>
     <section class="envie_mensagem">
       <div class="container">
-          <h2 class="text-center">ENVIE UMA MENSAGEM</h2>
+          <h2 class="text-center" data-aos="fade-down">ENVIE UMA MENSAGEM</h2>
           <form action="#" class="formulario_enviemsg px-md-0 px-3">
               <div class="row">
                   <div class="col-md-12 px-md-0 px-0">
-                      <input type="text" class="form-control" placeholder="NOME COMPLETO:" name="nome">
+                      <input type="text" class="form-control" placeholder="NOME COMPLETO:" name="nome" data-aos="fade-down">
                   </div>     
               </div>
               <div class="row">
                   <div class="col-md-8 pr-md-3 px-0">
-                      <input type="text" class="form-control" placeholder="E-MAIL:" name="email">
+                      <input type="text" class="form-control" placeholder="E-MAIL:" name="email" data-aos="fade-up">
                   </div>
                   <div class="col-md-4 pr-md-0 px-0">
-                      <input type="text" class="form-control" placeholder="TELEFONE:" name="telefone">
+                      <input type="text" class="form-control" placeholder="TELEFONE:" name="telefone" data-aos="fade-down">
                   </div>                
               </div>
               <div class="row">
                   <div class="col-md-12 px-0">
-                      <textarea name="mensagem" placeholder="MENSAGEM" class="form-control"></textarea>
+                      <textarea name="mensagem" placeholder="MENSAGEM" class="form-control" data-aos="fade-up"></textarea>
                   </div>
               </div>
               <div class="row">
-                  <button type="submit" class="btn btn_enviar_form mx-auto">ENVIAR</button>
+                  <button type="submit" class="btn btn_enviar_form mx-auto" data-aos="fade-down">ENVIAR</button>
               </div>
           </form>        
       </div>
@@ -427,11 +547,11 @@
     <section class="localizacao_contato">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 endereco_localizacao text-md-left text-center">
+                <div class="col-lg-8 col-md-6 endereco_localizacao text-md-left text-center" data-aos="fade-down">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.106414718113!2d-49.29109448498492!3d-25.46812188377089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3637eb57f7d%3A0xae8663bfdb04933c!2sR.+Jo%C3%A3o+Rodolfo+Schlenker%2C+418+-+%C3%81gua+Verde%2C+Curitiba+-+PR%2C+80620-030!5e0!3m2!1spt-BR!2sbr!4v1554295552095!5m2!1spt-BR!2sbr" width="500" height="309" style="border:0; width: 100%"  allowfullscreen></iframe>
                     <p>r. joão rodolfo schlenker, 418 curitiba - pr</p>
                 </div>
-                <div class="col-md-4 social_widget pr-md-0 text-md-left text-center">
+                <div class="col-lg-4 col-md-6 social_widget pr-md-0 text-md-left text-center" data-aos="fade-up">
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fagdred&tabs=timeline&width=300&height=309&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=336269550452887" width="306" height="309" style="border:none;overflow:hidden" allow="encrypted-media"></iframe>
                     <div class="social_contato d-flex flex-wrap align-items-center">
                           <a href=""><div class="facebook_contato"></div></a>                          
@@ -461,7 +581,7 @@
         <div class="footer_bottom">
             <div class="container d-flex">
                 <div class="red mr-auto"></div>
-                <div class="d-flex flex-row-reverse align-items-center">
+                <div class="d-flex flex-row-reverse align-items-center onlydesk">
                     <div class="socialTopo">
                         <a href="#" class="fb_icon"></a>
                         <a href="#" class="insta_icon"></a>
@@ -470,12 +590,23 @@
                     <div class="iconTopo whats"><a href="#" class="d-flex align-items-center"><span class="whats_ico"></span> (41) 99602-1975</a></div>
                 </div>
             </div>
+            <div class="container">
+                <div class="mobile d-lg-none d-flex">
+                    <div class="red redv2 mr-auto"></div>
+                    <div class="socialTopo">
+                        <a href="#" class="fb_icon"></a>
+                        <a href="#" class="insta_icon"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>        
+    </footer>
+    <a href="#"><div class="wp_flutuando"></div></a>        
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="js/script.js"></script>
 </body>
