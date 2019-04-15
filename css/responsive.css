@@ -180,9 +180,11 @@
         flex-direction: column;
     }
     .iconeMissao {
-        width: 49px;
+        width: 35px;
         height: 37px;
-        background-position: -71px 2px;
+        background-position: -81px 2px;
+        margin-left: 11px;
+        margin-right: 2px;
     }
     .iconeVisao {
         width: 31px;
@@ -241,21 +243,21 @@
         width: 58px;
         height: 61px;
         float: left;
-        background-position: 2px -16px;
+        background-position: 0px -32px;
         background-size: 373px;
     }
     .iconeAgilidade {
-        width: 52px;
+        width: 48px;
         height: 61px;
         float: left;
-        background-position: -56px -28px;
+        background-position: -58px -30px;
         background-size: 373px;
     }
     .iconePreco {
-        width: 61px;
+        width: 57px;
         height: 65px;
         float: left;
-        background-position: -107px -29px;
+        background-position: -106px -45px;
         background-size: 373px;
     }
     .seu_negocio p {
