@@ -1,5 +1,6 @@
 $(function() {
     $(".toggle_button").click(function(){
+        $(".toggle_button .open").hide('slow');
         $(".open", this).toggle('slow');
     });
     $(".miniaturas_case").each(function(){
@@ -53,7 +54,7 @@ $('.case_slider_fade').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    arrows: false,
+    arrows: true,
     dots: false,
     speed: 500,
     fade: true,

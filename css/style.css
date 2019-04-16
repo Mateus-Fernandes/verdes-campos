@@ -658,6 +658,14 @@ h2.titulo_case{
   color: #141718;
   font-size: 25px;
 }
+.case_slider_fade .slick-prev{
+  z-index: 99;
+  left: 50px;
+}
+.case_slider_fade .slick-next{
+  z-index: 99;
+  right: 50px;
+}
 .descricao_case{
   font-size: 15px;
   font-weight: 400;
@@ -1299,8 +1307,7 @@ a.insta_icon:hover {
   height: 95px;
   background: url(../images/sprite.png);
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 2%;
   background-position: 235px -53px;
   right: -3px;
   z-index: 8;

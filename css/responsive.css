@@ -449,5 +449,7 @@
     .hamburger{
         display: block;
     }
-    
+    nav.navigation.open_menu a {
+        color: #FFF;
+    }
 }
